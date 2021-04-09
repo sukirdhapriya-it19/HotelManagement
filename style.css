@@ -1,0 +1,244 @@
+body{
+    background-image: url("image.jpg" );
+    background-size: cover;
+    
+}
+#menu{
+    list-style: none;
+    text-decoration: none;
+    float:right;
+    margin-right: 20%;
+}
+#navmenu{
+    height:50px;
+    width:75%;
+    margin-left: 13%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color:white;
+   
+}
+
+ ul li{
+    display:inline-block;
+    margin:0 15px;
+
+}
+#name{
+    width:10%;
+    float: left;
+    color:white;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+ ul li a:hover{
+    color:rgb(114, 10, 74);
+}
+
+#signin{
+    width:5%;
+   margin-left: 95%;
+    color:white;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    
+}
+#rooms{
+    background-color:rgba(245, 245, 245, 0.884);
+    width:70%;
+    height:70%;
+    margin-right:30%;
+    margin-top: 3%;
+    overflow: scroll;
+    border-radius: 5px;
+    display:none;
+    float:right;
+}
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+.image{
+    float:right;
+    width:200px;
+    height:150px;
+}
+#rooms p {
+    font-size: 16px;
+    font-family: cursive;
+}
+#rooms ol{
+    font-size: 14px;
+    font-family: cursive;
+    
+}
+#booking{
+    font-size: 24px;
+    background-color: rgba(51, 167, 99, 0.836);
+    color:white;
+    padding:15px;
+}
+
+#eatndrink{
+    background-color: white;
+    width:60%;
+    height:70%;
+    margin-right:35%;
+    margin-top: 3%;
+    border-radius: 5px;
+    float:right;
+    display:none;
+}
+#content{
+    float:left;
+    width:50%;
+    height:100%;
+    text-align: center;
+    background-color:wheat;
+}
+
+#left{
+    float:left;
+    margin-left:15px;
+}
+#right{
+    float:right;
+    margin-right: 15px;
+}
+#img{
+    float:right;
+    width:50%;
+    height:100%;
+}
+
+#spa{
+    background-color: white;
+    width:60%;
+    height:70%;
+    margin-right:35%;
+    margin-top: 3%;
+    border-radius: 5px;
+    float:right;  
+    display:none;     
+}
+#spacontent{
+    float:left;
+    width:50%;
+    height:100%;
+    text-align: center;
+}
+#spaimg{
+    float:right;
+    width:50%;
+    height:100%;
+}
+#slides{
+    background-color: white;
+    width:60%;
+    height:70%;
+    margin-left:35%;
+    margin-top: 20%;
+    border-radius: 5px;
+    animation:slider 15s infinite linear;
+    transform: translate(-50% ,-50%);
+    display:none;
+}
+@keyframes slider{
+    0%{background-image: url("image1.jpg");background-size: 100% 100%;}
+    25%{background-image: url("image2.jpg");background-size: 100% 100%;}
+    50%{background-image: url("image3.jpg");background-size: 100% 100%;}
+    75%{background-image: url("image4.jpg");background-size: 100% 100%;}
+    95%{background-image: url("image5.jpg");background-size: 100% 100%;}
+}
+#contact{
+    background-color: white;
+    width:55%;
+    height:65%;
+    margin-right:40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    float:right; 
+    background-image: url("contact.jpg"); 
+    background-size:cover;
+    display:none;
+    font-weight: bold;
+}
+#contactcontent{
+    background-color: rgba(13, 14, 14, 0.699);
+    width:40%;
+    height:90%;
+    text-align: center;
+    color:white;
+    
+}
+
+#info{
+    margin-top: 50%;
+}
+
+
+#loginform input[type=email],[type=password]{
+    width:200px;
+    height:40px;
+    font-size:18px;
+    border:none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color:white;
+    
+}
+
+#loginform{
+    text-align:center;
+    padding-top:70px;
+    background-color: rgba(56, 56, 59, 0.685); 
+    width:400px;
+    height:400px;
+    margin-left:73%;
+    margin-top:3%;
+    color:white;
+    border-radius:62px;
+    position:fixed;
+
+}
+input[type="button"],[type="submit"]{
+    width:30%;
+    height:40px;
+    background-color:green;
+    color:aliceblue;
+    cursor:pointer;
+  
+}
+#loginform body{
+    background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMjU4fQ&w=1000&q=80");
+    background-size:cover;
+ 
+}
+#booknow{
+    text-align:center;
+    padding-top:70px;
+    background-color: rgba(56, 56, 59, 0.795); 
+    width:600px;
+    height:400px;
+    margin-left:20%; 
+    color:white;
+    border-radius:62px;
+    display: none;
+
+}
+#booknow input[type=email],[type=password],[type=text]{
+    width:200px;
+    height:30px;
+    font-size:18px;
+    border:none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color:white
+}

@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>BestNest</title>
+        <meta name="viewpoint" content="width=device-width ,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div id="navigation">
+            <div id="name" ><p >BestNest</p></div>
+       
+        <div id ="navmenu">
+        
+        <ul id="menu">
+            
+            <li><a id="roomsmenu">Rooms</a></li>
+            <li><a id="eatmenu">Eat And Drink</a></li>
+            <li><a id="spandwellness"> Spa and Wellness</a></li>
+            <li><a id="gallery">Gallery</a></li>
+            <li><a id="contactmenu">Contact Us</a></li>
+        </ul></div>
+
+         <div id="signin">
+            <p>SignIn</p>
+         </div>
+
+        </div>
+   <div id="rooms">
+       <h2 style="text-align: center;font-weight: bolder;"> Rooms and Suits</h2>
+       <div  class="rooms">
+           <img class="image" src="single.jpg" >
+           <p class ="heading">Superior Single Room</p>
+           <p>
+            The Superior Single room is perfect if you’re traveling alone or looking for privacy.</p>
+            <ol>
+                Single Bedroom</br>
+               Queen or Single bed</br>
+               217 to 250 sq ft</br>
+               Max Guest:1</br>
+               20 to 25 sq meters</br>
+            </ol>  
+       </div>
+        
+            <div class="rooms">
+            <p class="heading">Superior Double Room</p>
+            <img class="image" src="double.jpg" >
+            <p>
+            Ideal for two guests, whether a couple, two friends or perhaps for your next mother-daughter trip, 
+            this hotel room boasts a comfortable layout and warm colours.</p>
+           
+           <ol>
+            Single Bedroom</br>
+            King or Twin bed</br>
+            270 to 325 sq ft</br>
+            Max Guest:2</br>
+            20 to 30 sq meters</br>
+            </ol>
+            </div>
+            
+        <div class="rooms" >
+        
+        <p class="heading">Deluxe Double Room</p>
+        <img class="image" src="ddouble.jpg" >
+        <p>
+            Our Deluxe Rooms have been individually designed and decorated with calm, muted colour tones. 
+            Perfect for two or three, with a king or twin beds, and the option to add an extra bed.</p>
+           
+            <ol>
+            Single Bedroom</br>
+            King or queen bed</br>
+            375 to 485 sq ft</br>
+            Max Guest:3</br>
+            35 to 45 sq meters</br>
+         </ol>
+        </div>
+
+
+        <div class="rooms" >
+        
+        <p class="heading">Signature Lake Room with Balcony</p>
+        <p>
+            Large balcony doors swing open to invite fresh air and sunlight, allowing these extraordinary rooms to sparkle. 
+            Views of lake and mountains never fail to draw you in.</p>
+            <img class="image" src="lakeroom.jpg" >
+         <ol>
+            Single Bedroom</br>
+            King or Twin bed</br>
+            325 to 485 sq ft</br>
+            Max Guest:3</br>
+            35 to 45 sq meters</br>
+         </ol>
+         
+          </div>
+          <br></br>
+
+          
+   </div>
+   
+   
+            <script src="script.js"></script>
+
+    
+    <div id="loginform">
+       <form action="login.php" method="POST">
+        <h1 style="text-align:center">Login Form</h1><br><br>
+        <input type="email" id="usermail1" placeholder="user mail_id" name="loginuser" required><br><br><br><br>
+        <input type="password" id="pass1" placeholder="password" name="loginpass" maxlength="8" required><br><br><br>
+       
+        <input type="submit" value="submit">
+       </form>
+    </div>
+
+
+   <div id="booknow">
+    <form action="backend.php" method="post">
+        <h1 style="text-align:center">Book Now Pay Later!</h1><br><br>
+    <input type="text" id="username" placeholder="Name" name="name" required><br><br><br>
+    <input type="email" id="usermail" placeholder="user mail_id" name="mail" required><br><br><br>
+    <input type="password" id="pass" placeholder="password" name="passw" maxlength="8" required><br><br> <br><br>
+    <input type="submit" value="submit" onclick="myfunction()" >
+    <input type="submit" id="haveaccount" value="Already have an account?">
+    </form>
+   </div>
+<div id="eatndrink">
+   <div id="content">
+      <h1>Restaurant Information</h1>
+      <h2><i class="fa fa-clock-o"></i>  Opening Hours</h2>
+      <h2>
+        All Day Dining - 24 /7
+      </h2>
+       <h3><i class="fa fa-cutlery"></i>  Buffet Timings</h3>
+         <div id="left">
+            <p style="font-weight:bold;"> Breakfast </p>
+            <p>6:30am - 10:30am</p>
+           <p style="font-weight:bold;">Lunch </p> 
+           <p> 12:30pm - 3:30pm</p>
+          </p>
+         </div>
+         <div id="right">
+            <p style="font-weight:bold;"> Dinner </p>
+            <p>07:00pm - 11:30pm</p>
+           <p style="font-weight:bold;"> Brunch </p>
+            <p>12:30pm - 4:00pm</p>
+         </div>
+         
+      <div id="info">
+          <p style="font-weight:bold;"><i class="fa fa-handshake-o"></i>  24 hrs door delivery</p>
+        <p style="font-weight:bold;"><i class="fa fa-phone"></i>  91 7652899049</p></div>
+   </div>
+   <div id ="img">
+     <img  src="eatndrink.jpg" style="height:510px ; width:475px">
+   </div>
+</div>
+<div id="spa">
+    <div id="spacontent">
+     <h1>Spa and Wellness</h1><br><br>
+     <p style="font-size: 18px;">' <span style="font-family: 'Times New Roman' ;font-weight: bold;font-size:18px">Experience the Original' is the mantra of our spa!</span><br><br>To ensure that
+        ur guests enjoy the authentic Bali Spa,
+          we have ensured the therapiss, the oils, the salts, the scrubs are all from Bali,Indonesia. Our spa has generous
+           and well appointed dry and wet rooms. With more than 8 rooms and with a ambience that's world class and luxuries. <br><br>
+          <span style="font-family: 'Times New Roman' ;font-weight: bold;font-size:18px">Experience is believing! so drop in!!</span> </p><br><br>
+    <p style="font-size: 20px;font-weight: bold"> Open Timing:10AM -10PM</p>
+    <p style="font-size: 20px;font-weight: bold">Duration:1-2 Hours</p>
+    </div>
+    <div id="spaimg">
+        <img   src="spa.jpg" style="height:510px ; width:475px">
+    </div>
+</div>
+<div id="contact">
+<div id="contactcontent">
+ <h1>    Contact</h1><br>
+ <p><i class="fa fa-phone"></i>  Call:91 7652899049</p><br>
+ <p><i class="fa fa-envelope-o"></i>  Email:bestneststar5@gmail.com </p><br>
+ <h3><i class="fa fa-map-marker"></i>   Address:</h3>
+ <p>Court Rd, Kuttai Thidal, Udumalaipettai, Tamil Nadu 642126</p>
+</div>
+</div>
+
+<div id="slides">
+
+</div>
+
+</body>
+<script>
+    
+    document.getElementById("haveaccount").onclick=function(){
+        document.getElementById("booknow").style.display="none";
+        document.getElementById("loginform").style.display="block";
+    }
+
+    function myfunction(){
+
+        var ele=document.getElementById("error0");
+        var user =document.getElementById("usermail").Value;
+       if(/@gmail\.com$/.test(user)){
+             ele.innerHTML="";
+  
+            }
+        
+    }
+
+    document.getElementById("gallery").onclick=function () {
+    var x = document.getElementById("slides");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+</html>

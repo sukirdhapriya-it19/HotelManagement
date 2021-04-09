@@ -1,0 +1,147 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+        #slider{
+            margin:0 auto;
+            width:800px;
+            max-width:100px;
+            text-align:center;
+        }
+        #slider input[type=radio]{
+            display:none;
+        }
+        #slider label{
+            cursor:pointer;
+            text-decoration:none;
+        }
+        #sliders{
+            padding:10px;
+            border:3px solid #ccc;
+            background:#fff;
+            position:relative;
+            z-index:1;
+        }
+        #overflow{
+            width:100%;
+            overflow:hodden;
+
+        }
+        #slide1:checked ~ #slides.inner{
+            margin-left:0%;
+        }
+        #slide2:checked ~ #slides.inner{
+            margin-left:-100%;
+        }
+        #slide3:checked ~ #slides.inner{
+            margin-left:-200%;
+        }
+        #slide4:checked ~ #slides.inner{
+            margin-left:-300%;
+        }
+        #slides.inner{
+            transition:margin-left 800ms cubic-beizer(0.770,0.000,0.175,1.000);
+            width:400%;
+            line-height: 0;
+            height:200px;
+        }
+        #slides.slide{
+            width:25%;
+            float:left;
+            display:block;
+            height:100%;
+            color:#fff;
+        }
+        #slides .slide_1{
+            background:#00171F;
+        }
+        #slides .slide_2{
+            background:#003459;
+        }
+        #slides .slide_3{
+            background:#007EA7;
+        }
+        #slides .slide_4{
+            background:#00ABE8;
+        }
+        #slide-content{
+            padding:10px;
+        }
+        #controls{
+            margin: -130px 0 0 0;
+            width:100%;
+            height:50px;
+            z-index: 3;
+            position: relative;
+        }
+        #controls label{
+            transition:opacity 0.2s ease-out;
+            display: none;
+            width:50px;
+            height:50px;
+            opacity: .4;
+        }
+        #controls label:hover{
+            opacity:1;
+        }
+        #slide1:checked ~ #controls label:nth-child(2),
+        #slide2:checked ~ #controls label:nth-child(3),
+        #slide3:checked ~ #controls label:nth-child(4),
+        #slide4:checked ~ #controls label:nth-child(1){
+        background:url("arrow.png") no-repeat;
+        float:right;
+        margin:0  0 0 -50px;
+        display:block;
+        }
+    </style>
+    <body>
+        <div id="slider">
+            <input type="radio" name="slider" id="slider1"checked>
+            <input type="radio" name="slider" id="slider2">
+            <input type="radio" name="slider" id="slider3">
+            <input type="radio" name="slider" id="slider4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <di class="slide-content">
+                                <h2>slide1</h2>
+                                <p>content1</p>
+                            </di>
+                        </div>
+                        <div class="slide slide_2">
+                            <di class="slide-content">
+                                <h2>slide2</h2>
+                                <p>content2</p>
+                            </di>
+                        </div>
+                        <div class="slide slide_3">
+                            <di class="slide-content">
+                                <h2>slide3</h2>
+                                <p>content3</p>
+                            </di>
+                        </div>
+                        <div class="slide slide_4">
+                            <di class="slide-content">
+                                <h2>slide4</h2>
+                                <p>content4</p>
+                            </di>
+                        </div>
+                    </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+    </body>
+</html>

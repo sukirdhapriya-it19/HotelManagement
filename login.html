@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Registration form
+        </title>
+        <style>
+            input[type=email],[type=password]{
+                width:60%;
+                height:40px;
+                padding:20px;
+                font-size:18px;
+ 
+            }
+            div{
+                text-align:center;
+                padding-top:70px;
+                background-color:darkslategray;
+                width:500px;
+                height:400px;
+                margin-left:500px;
+                margin-top:120px;
+                opacity:.7;
+                color:white;
+                border-radius:62px;
+            
+            }
+            input[type="button"]{
+                width:20%;
+                height:40px;
+                background-color:green;
+                color:aliceblue;
+                cursor:pointer;
+              
+            }
+            body{
+                background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMjU4fQ&w=1000&q=80");
+                background-size:cover;
+             
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            <h1 style="text-align:center">Login Form</h1><br><br>
+        <input type="email" id="usermail" placeholder="user mail_id" name="user" required><br><br><br><br>
+        <input type="password" id="pass" placeholder="password" name="pass" maxlength="8" required><br><br><br>
+        <span id="error0"></span>
+        <br><br>
+        <input type="button" value="submit" onclick="myfunction()">
+        <script >
+          function myfunction()
+{
+  var ele=document.getElementById("error0");
+  var user =document.getElementById("usermail").Value;
+if(/@gmail\.com$/.test(user)){
+  ele.innerHTML="";
+  
+}
+  var str = document.getElementById("pass").value; 
+  
+ if ( str.match(/[a-z]/g) && str.match( 
+  /[A-Z]/g) && str.match( 
+  /[0-9]/g) && str.match( 
+   /[^a-zA-Z\d]/g) && str.length >= 8) 
+  window.location.href="https://bitsathy.ac.in"
+    
+  else 
+         {
+            ele.innerHTML="please enter valid gmail account and password";
+        } 
+} 
+            
+
+        </script>
+        </div>
+       
+    </body>
+</html>
